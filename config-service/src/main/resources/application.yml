@@ -7,4 +7,4 @@ spring:
     config:
       server:
         git:
-          uri: file://C:\Users\user\Desktop\github\msa_shopping\config-service
+          uri: file://C:\Users\user\Desktop\github\msa_shopping\config-info
