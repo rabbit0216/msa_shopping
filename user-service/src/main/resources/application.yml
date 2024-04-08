@@ -10,6 +10,11 @@ spring:
       settings:
         web-allow-others: true
       path: /h2-console
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/test
+    username: sa
+    password:
 
 eureka:
   instance:
@@ -19,6 +24,12 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: refresh, health, info
 
 greeting:
   message: Welcome to the Simple E-commerce.
